@@ -525,15 +525,16 @@ class prototypeScene extends Phaser.Scene {
         let skipName = tileBody.name;
         
         this.killTile(tileBody.name, ball.x, ball.y);
+        this.increaseScore();
         
         let killPool = this.checkLeftoverTiles(skipName);
         for (let i = 0; i < killPool.length; i++) {
             this.killTile(killPool[i], ball.x, ball.y);
+            this.increaseScore();
         }
         
         this.increaseTileSpeed();
         this.changeBackgroundColor();
-        this.increaseScore();
     };
     
     increaseTileSpeed() {
