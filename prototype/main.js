@@ -82,7 +82,7 @@ let gameOptions = {
     },
     tile: {
         size: 40,
-        speed: 0.2,
+        speed: 0.3,
         speedIncrement: 0.001,
         shape: ['dot/0','o/0','i/0','i/1','s/0','s/1','z/0','z/1','t/0','t/1','t/2','t/3','l/0','l/1','l/2','l/3','j/0','j/1','j/2','j/3'],
         body: [
